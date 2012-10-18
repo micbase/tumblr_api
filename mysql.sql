@@ -71,6 +71,6 @@ CREATE TABLE IF NOT EXISTS `photos` (
     `heigh` int unsigned NOT NULL DEFAULT 0,
     `url` varchar(255) NOT NULL DEFAULT '',
     PRIMARY KEY (`photo_id`),
-    UNIQUE KEY `unipho` (`post_id`,`url`)
+    UNIQUE KEY `unipho` (`post_id`,`original_size`,`url`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
