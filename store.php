@@ -108,6 +108,7 @@ if ($data['meta']['status'] == 200)
                 $height = check($pho['original_size']['height']);
                 $url = check($pho['original_size']['url']);
                 $photo_sql = $photo_sql . "($id,$photo_caption,1,$width,$height,$url),";
+
             }
             $photo_count ++;
             break;
@@ -141,7 +142,7 @@ if ($data['meta']['status'] == 200)
         mysql_query("INSERT IGNORE INTO photosets (post_id,caption,photoset_layout) VALUES $photoset_sql");
         mysql_query("INSERT IGNORE INTO photos (post_id,caption,original_size,width,heigh,url) VALUES $photo_sql");
     }
-    //echo "OK";
+    echo "OK";
 
 }
 else
