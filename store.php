@@ -17,7 +17,7 @@ $api = "http://api.tumblr.com/v2/blog/miccrun.tumblr.com";
 $api = "http://api.tumblr.com/v2/blog/targetstyle.tumblr.com";
 $apikey = "eGyGS6rj0OHqG4QCwY9yXSjhiA4e3iBvGECpH74wbUhzXu2Nt9";
 
-$db = mysql_connect("127.0.0.1","root","");
+$db = mysql_connect("127.0.0.1","root",[INSERT PASSWORD HERE]);
 if (!$db)
 {
     die('Could not connect: ' . mysql_error());
